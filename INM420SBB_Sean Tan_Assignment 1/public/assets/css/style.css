@@ -1,0 +1,394 @@
+/* NAVBAR */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 60px;
+}
+
+.navbar-brand {
+    margin-left: 100px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 0 15px;
+    position: relative;
+}
+
+.nav-item:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+.nav-link {
+    color: darkviolet !important;
+    font-weight: bold;
+}
+
+.nav-link.selected {
+    color: black !important;
+}
+
+.sign-in-btn {
+    margin-right: 100px;
+    border-radius: 20px; 
+    background-color: darkviolet;
+    color: white;
+    font-weight: bold;
+}
+
+/* HERO SECTION */
+
+.content-section {
+    padding: 40px 0;
+    text-align: center;
+    height: 180vh;
+}
+
+.content-section h1, .content-section h2 {
+    font-weight: bold;
+}
+
+.content-section h1 {
+    font-size: 100px;
+}
+
+.content-section h2 {
+    font-size: 50px;
+}
+
+.content-section .highlight {
+    color: red;
+}
+
+/* GRID */
+
+.photos {
+    width: 90%;
+    height: 75%;
+    margin-top: 50px;
+}
+
+/* DELIVERING */
+
+.detail {
+    height: 600px;
+}
+
+.weewoo {
+    font-weight: bold;
+    text-align: left;
+}
+
+.icon-circle {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}  
+ 
+.bg-pink {
+    background-color: #ff007f;
+}  
+ 
+.bg-blue {
+    background-color: #007bff;
+}
+
+.bg-purple {
+    background-color: #6f42c1;
+}
+
+.bg-green {
+    background-color: #28a745;
+}
+  
+.feature-icon {
+    display: flex;
+    align-items: center;
+}
+  
+.col-md-3 {
+    display: flex;
+    flex-direction: column;
+}  
+
+.learn-more {
+    margin-top: auto;
+    color: darkviolet;
+    border-color: gray;
+    border-radius: 20px;
+}
+
+/* CONTACT / INFORMATION SECTION */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+  
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.col-md-8 {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+}
+
+.col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.followus, .infooo, .followww, .touch1 {
+    font-size: 15px !important;
+    color: gray;
+}
+  
+.text-uppercase {
+    text-transform: uppercase;
+}
+  
+.d-flex {
+    display: flex;
+}
+  
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.3s ease;
+}
+  
+.social-icon.bg-yellow {
+    background-color: #ff0;
+}
+  
+.social-icon:hover {
+    background-color: #555;
+    color: #fff;
+}
+  
+.columns-3 {
+    column-count: 3;
+    column-gap: 1rem;
+}
+
+.columns-3 li {
+    break-inside: avoid;
+    margin-bottom: 0.5rem;
+}
+
+.columns-3 li a {
+    text-decoration: none;
+    color: #000;
+}
+  
+.columns-3 li a:hover {
+    text-decoration: underline;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #6c63ff;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.btn-primary:hover {
+    background-color: #5548c8;
+}
+
+.h4.text-primary {
+    color: #6c63ff;
+    text-decoration: none;
+}
+  
+.h4.text-primary:hover {
+    text-decoration: underline;
+}
+  
+textarea.form-control {
+    height: 100px;
+}
+
+.emailadd {
+    color: darkviolet;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.follow-us .social-icon {
+    margin-right: 10px;
+}
+
+.information {
+    margin-top: 20px;
+}  
+
+.yellow-rectangle {
+    width: 100%; 
+    height: 50px;
+    background-color: yellow;
+    margin-top: 20px;
+}
+
+.mobile-footer {
+    display: none;
+}
+
+/* MOBILE SCREEN */
+
+@media (max-width: 768px) {
+    
+    .navbar-toggler {
+        order: 1;
+    }
+    
+    .navbar-brand {
+        order: 2;
+        margin-left: 0;
+        margin-right: auto;
+    }
+    
+    .navbar-collapse {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .navbar-nav {
+        flex-direction: row;
+        width: auto;
+        margin: 0 10px;
+    }
+    
+    .nav-item {
+        padding: 0 10px;
+    }
+    
+    .nav-item:not(:last-child)::after {
+        display: block;
+        margin: 0 5px;
+    }
+    
+    .sign-in-btn {
+      order: 3;
+      margin-right: 10px;
+    }
+
+    /* HERO */
+
+    .content-section h1 {
+        font-size: 80px;
+    }
+    
+    .content-section h2 {
+        font-size: 30px;
+    }
+
+    .content-section {
+        height: 100vh;
+    }
+
+    .photos {
+        height: 52%;
+    }
+
+    .detail {
+        height: 115vh;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .col-md-3 {
+        flex: 0 0 50%; 
+    }
+
+    .col-md-3:nth-child(n+3) {
+        margin-top: 20px; /* Adjust the margin as needed */
+    }
+
+    .footer-section {
+        display: none;
+    }
+
+    .mobile-footer {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        height: 30vh;
+    }
+
+    .mobile-footer p {
+        margin: 5px 0;
+    }
+
+    .copyright {
+        color: #333;
+        font-size: 16px;
+    }
+    
+    .made-in {
+        color: green !important;
+        font-size: 14px;
+    }
+    
+    .agency {
+        color: darkviolet;
+        font-size: 16px;
+    }
+    
+    .email {
+        color: darkviolet;
+        font-size: 18px;
+    }
+
+}
