@@ -286,6 +286,7 @@ textarea.form-control {
 
 @media (max-width: 768px) {
     
+    /* navbar */
     .navbar-toggler {
         order: 1;
     }
@@ -353,9 +354,11 @@ textarea.form-control {
     }
 
     .col-md-3:nth-child(n+3) {
-        margin-top: 20px; /* Adjust the margin as needed */
+        margin-top: 20px;
     }
 
+    /* footer mobile */
+    
     .footer-section {
         display: none;
     }
